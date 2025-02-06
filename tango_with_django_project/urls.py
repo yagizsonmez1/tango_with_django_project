@@ -23,8 +23,4 @@ urlpatterns = [
     path('rango/', include('rango.urls')),
     # The above maps any URLs starting with rango/ to be handled by rango.
     path('admin/', admin.site.urls),
-    #path('rango/', include ('rango/urls'))
-    #path('rango/', include('rango.urls')),
-    #path('', views.index, name = 'about'),
-    #path('admin/', admin.site.urls)
 ]
