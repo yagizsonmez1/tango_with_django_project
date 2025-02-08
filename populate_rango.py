@@ -15,10 +15,10 @@ def populate():
          'views': 1000},  # Highest views
         {'title': 'Learn Python in 10 Minutes', 
          'url': 'http://www.korokithakis.net/tutorials/python/', 
-         'views': 500},
+         'views': 900},
         {'title': 'How to Think like a Computer Scientist', 
          'url': 'http://www.greenteapress.com/thinkpython/', 
-         'views': 250} ]
+         'views': 500} ]
     django_pages = [
         {'title': 'How to Tango with Django', 
          'url': 'http://www.tangowithdjango.com/', 
@@ -35,7 +35,7 @@ def populate():
          'views': 20},
         {'title': 'Flask', 
          'url': 'http://flask.pocoo.org', 
-         'views': 270} ]
+         'views': 600} ]
     cats = {
     'Python': {'pages': python_pages, 'views': 128, 'likes': 64},
     'Django': {'pages': django_pages, 'views': 64, 'likes': 32},
