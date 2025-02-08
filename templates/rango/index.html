@@ -12,7 +12,7 @@
         </div>
 
         <div>
-            <h2>Most Liked Categories</h2>  <!-- Heading for categories -->
+            <h2>Most Liked Categories</h2>
             {% if categories %}
                 <ul>
                     {% for category in categories %}
@@ -27,13 +27,11 @@
         </div>
 
         <div>
-            <h2>Most Viewed Pages</h2>  <!-- Heading for pages -->
+            <h2>Most Viewed Pages</h2>
             {% if pages %}
                 <ul>
                     {% for page in pages %}
-                        <li>
-                            <a href="{{ page.url }}">{{ page.title }}</a> ({{ page.views }} views)
-                        </li>
+                        <li><a href="{{ page.url }}">{{ page.title }}</a></li>
                     {% endfor %}
                 </ul>
             {% else %}
