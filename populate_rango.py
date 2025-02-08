@@ -35,7 +35,7 @@ def populate():
          'views': 20},
         {'title': 'Flask', 
          'url': 'http://flask.pocoo.org', 
-         'views': 25} ]
+         'views': 270} ]
     cats = {
     'Python': {'pages': python_pages, 'views': 128, 'likes': 64},
     'Django': {'pages': django_pages, 'views': 64, 'likes': 32},
