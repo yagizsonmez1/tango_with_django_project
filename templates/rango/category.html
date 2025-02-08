@@ -1,15 +1,9 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Rango</title>
+        <title>Rango - {{ category.name }}</title>
     </head>
     <body>
-        <div>
-            <a href="/rango/">Back to Index</a>  <!-- Link back to index -->
-        </div>
-        <div>
-            <a href="{% url 'rango:index' %}">Rango Homepage</a>  <!-- Proper hyperlink to the homepage -->
-        </div>
         <div>
             {% if category %}
                 <h1>{{ category.name }}</h1>
@@ -23,8 +17,13 @@
                     <strong>No pages currently in category.</strong>
                 {% endif %}
             {% else %}
-                The specified category does not exist.
+                <strong>The specified category does not exist.</strong>
             {% endif %}
+        </div>
+
+
+        <div>
+            <a href="/rango/">Home</a>
         </div>
     </body>
 </html>
