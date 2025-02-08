@@ -16,8 +16,10 @@
         {% if categories %}
             <ul>
             {% for category in categories %}
-                <li>{{ category.name }}</li> 
-            {% endfor %}
+                <li>
+                    <a href="/rango/category/{{ category.slug }}/">{{ category.name }}</a>
+                </li> 
+                {% endfor %}
             </ul> 
         {% else %}
             <strong>There are no categories present.</strong> 
