@@ -8,6 +8,9 @@
             <a href="/rango/">Back to Index</a>  <!-- Link back to index -->
         </div>
         <div>
+            <a href="{% url 'rango:index' %}">Rango Homepage</a>  <!-- Proper hyperlink to the homepage -->
+        </div>
+        <div>
             {% if category %}
                 <h1>{{ category.name }}</h1>
                 {% if pages %}
