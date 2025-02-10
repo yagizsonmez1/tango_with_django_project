@@ -3,7 +3,7 @@ from django.template.defaultfilters import slugify
 from django.contrib.auth.models import User
 
 class Category(models.Model):
-    NAME_MAX_LENGTH = 128  # Define as a class attribute
+    NAME_MAX_LENGTH = 128  
     name = models.CharField(max_length=NAME_MAX_LENGTH, unique=True)
     name = models.CharField(max_length=128, unique=True) 
     views = models.IntegerField(default=0)
@@ -32,7 +32,6 @@ class Page(models.Model):
         return self.title
     
 class UserProfile(models.Model):
-    # This line is required. Links UserProfile to a User model instance. 
     user = models.OneToOneField(User, on_delete=models.CASCADE)
 
     # The additional attributes we wish to include.
